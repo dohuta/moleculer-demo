@@ -1,0 +1,10 @@
+NODE_ENV=development
+
+LOGLEVEL=debug
+
+JWT_ISSUER = https://dohuta.net
+JWT_SECRET = Gc9rB-yHzy4z4YPp
+JWT_EXPIRATION = 30d
+
+AUTH_CACHE_INDEX = 1
+CART_CACHE_INDEX = 2

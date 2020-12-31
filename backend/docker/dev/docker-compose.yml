@@ -1,0 +1,26 @@
+version: "3"
+
+services:
+  cache:
+    image: redis:latest
+    restart: always
+    ports:
+      - "6379:6379"
+    networks:
+      - mole-backend
+    command: redis-server --appendonly yes
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    restart: always
+    networks:
+      - mole-backend
+    ports:
+      - "1433:1433"
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "Password789"
+
+networks:
+  mole-backend:
+    driver: bridge

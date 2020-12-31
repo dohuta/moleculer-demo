@@ -1,0 +1,6 @@
+.env
+docker-compose.yml
+Dockerfile
+node_modules
+tests
+.vscode

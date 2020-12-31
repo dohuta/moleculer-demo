@@ -1,0 +1,21 @@
+{
+  "defaultProject": "moleshop",
+  "projects": {
+    "moleshop": {
+      "name": "moleshop",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "react",
+      "root": "apps/moleshop"
+    },
+    "adminConsole": {
+      "name": "adminConsole",
+      "integrations": {
+        "capacitor": {}
+      },
+      "type": "react",
+      "root": "apps/adminConsole"
+    }
+  }
+}
