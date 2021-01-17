@@ -56,7 +56,7 @@ module.exports = {
 		},
 	},
 	serializer: "JSON",
-	requestTimeout: 10 * 1000,
+	// requestTimeout: 10 * 1000,
 	// Number of seconds to send heartbeat packet to other nodes.
 	heartbeatInterval: 10,
 	// Number of seconds to wait before setting node to unavailable status.
